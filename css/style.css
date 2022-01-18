@@ -1,0 +1,225 @@
+:root{
+    --darkest: #2D142C ;
+    --darker: #510A32 ;
+    --mid:  #801336;
+    --light: #C72C41;
+    --lighter: #EE4540;
+    --lightest: #fce5e4;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+    text-decoration: none !important;
+    
+}
+
+body{
+    background-color: var(--lighter) !important;
+}
+
+.sidebar {
+    background-color: var(--lighter);
+    width: 200px;
+    position: fixed;
+    height: 100vh;
+    /* overflow-y: scroll; */
+    left: 0;
+    top:0;
+    z-index: 100;
+    border-radius: 0rem 0rem 2rem 0rem;
+    border: none;
+    transition: width 300ms;
+}
+
+.checkbox{
+    display: none;
+}
+
+.sidebar-menu li{
+    width: 100%;
+
+    
+    margin-bottom: 1.7rem;
+    padding-left: 1.7rem;
+}
+
+.sidebar-menu a{
+    display: block;
+    color: var(--darkest);
+    font-size: 1.5rem;
+    padding-left: 2rem;
+}
+
+.home {
+    padding-top: 5rem;
+}
+
+#nav-toggle:checked + .sidebar {
+    width: 200px;
+}
+
+#nav-toggle:checked + .sidebar  {
+    display: none;
+}
+
+
+#nav-toggle:checked ~ .main-content {
+    margin-left: 0px;
+
+}
+
+#nav-toggle:checked ~ .main-content header {
+    width: calc(100%);
+    left: 200px;
+}
+
+
+.main-content {
+    transition: margin-left 300ms;
+    margin-left: 200px;
+}
+
+.main-content header {
+    background-color: var(--darkest);
+    display: flex;
+    justify-content: space-between;
+    padding-top: 1.5rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    height: 5rem;
+    /* box-shadow: 4px 4px 10px rgb(0,0,0,0.2); */
+    /* position: fixed; */
+    left: 200px;
+    width: 100%;
+    top: 0;
+    z-index: 100;
+    transition: left 300ms;
+    
+    
+}
+
+
+.fas, .far, .fab{
+    color: var(--lightest);
+}
+
+#profile {
+    display: flex;
+}
+
+
+.background1 {
+    background-color: var(--darkest);
+    height: 50vh;
+}
+
+.background1 .name h1 {
+    color: var(--lightest);
+    /* padding-left: 5rem; */
+    padding-top: 10rem;
+    font-size: 3rem;
+    font-family: 'Mochiy Pop P One', sans-serif;
+}
+
+.background1 .name p {
+    color: var(--lightest);
+    margin: 0;
+    font-size: 1.7rem;
+}
+
+.displaypics {
+    margin: auto;
+    
+}
+.displaypics img{
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+}
+
+.bio {
+    color: var(--lightest);
+    margin-top: 5.8rem;
+    width: 250px;
+    height: fit-content;
+    font-size: 1.2rem;
+    border-left: var(--light) 2px solid ;
+    padding-left: 1.7rem;
+    /* padding-bottom: 0rem; */
+    font-family: 'Concert One', cursive;
+    text-align: center;
+
+}
+
+.links {
+    text-align: center;
+}
+.background2 {
+    background-color:var(--darker);
+    height: 40vh;
+}
+
+.containers{
+    margin: auto;
+    width: 75%;
+}
+
+.extras {
+    color: var(--lightest);
+    display: flex;
+    justify-content: space-between;
+    padding-top: 8rem;
+    text-align: center;
+}
+
+.extras p {
+    padding: 0rem;
+    margin: 0rem;
+}
+
+.about {
+    color: var(--lightest);
+    /* display: none; */
+}
+
+.about-heading {
+    margin-top: 5rem;
+    
+    
+}
+
+.about-heading h1{
+    font-size: 5rem;
+}
+
+.about-content{
+    display: flex;
+}
+.about-content-left{
+    text-align: center;
+    margin-top: 5rem;
+    margin-left: 5rem;
+    width: 20vw;
+    padding-left: 2rem;
+    padding-inline-end: 2rem;   
+}
+
+.milestones{
+    padding-top: 2.5rem;
+}
+
+.about-content-right{
+    margin-top: 2rem ;
+    margin-left: 2rem;
+    padding-left: 3rem;
+    width: 80vw;
+    border-left: 1px solid var(--darkest) ;
+}
+
+.about-content-right pre{
+    padding-top: 2rem ;
+    color: var(--lightest);
+    font-size: 1rem;
+}
