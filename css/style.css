@@ -2,7 +2,7 @@
     --darkest: #2D142C ;
     --darker: #510A32 ;
     --mid:  #801336;
-    --light: #C72C41;
+    --lights: #c72c41;
     --lighter: #EE4540;
     --lightest: #fce5e4;
 }
@@ -21,7 +21,7 @@ body{
 }
 
 .sidebar {
-    background-color: var(--lighter);
+    background-color: var(--mid);
     width: 200px;
     position: fixed;
     height: 100vh;
@@ -29,7 +29,7 @@ body{
     left: 0;
     top:0;
     z-index: 100;
-    border-radius: 0rem 0rem 2rem 0rem;
+    /* border-radius: 0rem 0rem 2rem 0rem; */
     border: none;
     transition: width 300ms;
 }
@@ -48,7 +48,7 @@ body{
 
 .sidebar-menu a{
     display: block;
-    color: var(--darkest);
+    color: var(--lightest);
     font-size: 1.5rem;
     padding-left: 2rem;
 }
@@ -113,14 +113,14 @@ body{
 
 .background1 {
     background-color: var(--darkest);
-    height: 50vh;
+    height: 100%;
 }
 
 .background1 .name h1 {
     color: var(--lightest);
     /* padding-left: 5rem; */
     padding-top: 10rem;
-    font-size: 3rem;
+    font-size: 3.5rem;
     font-family: 'Mochiy Pop P One', sans-serif;
 }
 
@@ -132,20 +132,23 @@ body{
 
 .displaypics {
     margin: auto;
+    padding: 0rem;
     
 }
-.displaypics img{
+/* .displaypics img{
+
+    padding-bottom: rem !important;
     border-bottom-left-radius: 50%;
     border-bottom-right-radius: 50%;
-}
+} */
 
 .bio {
     color: var(--lightest);
-    margin-top: 5.8rem;
-    width: 250px;
+    margin-top: 10rem;
+    width: 300px;
     height: fit-content;
     font-size: 1.2rem;
-    border-left: var(--light) 2px solid ;
+    /* border-left: var(--light) 2px solid ; */
     padding-left: 1.7rem;
     /* padding-bottom: 0rem; */
     font-family: 'Concert One', cursive;
@@ -157,8 +160,8 @@ body{
     text-align: center;
 }
 .background2 {
-    background-color:var(--darker);
-    height: 40vh;
+    background-color: var(--darker);
+    height: 120vh;
 }
 
 .containers{
@@ -170,7 +173,7 @@ body{
     color: var(--lightest);
     display: flex;
     justify-content: space-between;
-    padding-top: 8rem;
+    padding-top: 1.5rem;
     text-align: center;
 }
 
@@ -186,12 +189,11 @@ body{
 
 .about-heading {
     margin-top: 5rem;
-    
-    
+
 }
 
 .about-heading h1{
-    font-size: 5rem;
+    font-size: 4rem;
 }
 
 .about-content{
@@ -199,7 +201,7 @@ body{
 }
 .about-content-left{
     text-align: center;
-    margin-top: 5rem;
+    margin-top: 2rem;
     margin-left: 5rem;
     width: 20vw;
     padding-left: 2rem;
@@ -207,7 +209,7 @@ body{
 }
 
 .milestones{
-    padding-top: 2.5rem;
+    padding-top: 2rem;
 }
 
 .about-content-right{
@@ -215,7 +217,7 @@ body{
     margin-left: 2rem;
     padding-left: 3rem;
     width: 80vw;
-    border-left: 1px solid var(--darkest) ;
+    border-left: 1px dashed var(--lightest) ;
 }
 
 .about-content-right pre{
@@ -223,3 +225,172 @@ body{
     color: var(--lightest);
     font-size: 1rem;
 }
+
+.background3 {
+    background-color: var(--mid);
+    height: auto;
+}
+
+.background3 h2{
+    color: var(--lightest);
+    padding-top: 4rem ;
+    font-size: 4rem;
+}
+
+.MyResume{
+    display: flex;
+    color: var(--lightest);
+}
+
+.MyResume h3 {
+    padding-top: 2.5rem;
+}
+
+.resume-left {
+    text-align: center;
+    margin-top: 5rem;
+    margin-left: 1rem;
+    width: 12vw;
+    padding-left: 1rem;
+    
+}
+.resume-right{
+    margin-top: 2rem ;
+    margin-left: 1rem;
+    padding-top: 1rem;
+    padding-left: 3rem;
+    /* width: 88vw; */
+    border-left: 1px dashed var(--lightest) 
+}
+
+.skills{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.resume-right-row3{
+    display: flex;
+}
+.resume-right-row3-col1{
+    width: 35%;
+}
+.education  h3, .expertise h3{
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+.education p, .expertise p {
+    font-size: 1.2rem;
+    margin: .5rem;
+    padding: .1rem;
+
+}
+
+.resume-right-row3-col2 {
+    border-left: dashed 1px;
+    padding-left: 3rem;
+}
+
+.experience1, .experience2, .experience3 {
+    display: flex;
+}
+ .date {
+    width: 35%;
+}
+
+.background4{
+    background-color: var(--lights);
+    height: auto;
+    padding-left: 1rem;
+}
+
+.background4 h2{
+    color: var(--lightest);
+    padding-top: 4rem ;
+    font-size: 4rem;
+}
+
+.background4 p {
+    color: var(--lightest);
+    font-size: 1.5rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.background4 .card {
+    background-color:var(--darker);
+}
+.background4 .card-title {
+    color:var(--lightest);
+    font-size: 2rem;
+}
+.background4 .card-text {
+    color:var(--lightest);
+    font-size: 1.1rem;
+}
+
+.contact {
+    color: var(--lightest);
+    /* display: none; */
+}
+
+.contact-heading {
+    margin-top: 5rem;
+
+}
+
+.contact-heading h1{
+    font-size: 4rem;
+}
+
+.contact-content{
+    display: flex;
+    margin-bottom: 3rem;
+}
+.contact-content-left{
+    text-align: center;
+    margin-top: 2rem;
+    margin-left: 3rem;
+    margin-right: 1rem;
+    width: 20vw;
+    padding-left: 2rem;
+    padding-inline-end: 2rem;   
+}
+
+.contacts{
+    padding-top: 3rem;
+}
+
+.email a {
+    color: var(--lightest);
+}
+
+.contact-content-right{
+    margin-top: 2rem ;
+    margin-left: 2rem;
+    padding-top: 3.5rem;
+    padding-left: 1rem;
+    width: 80vw;
+    border: 1px dashed var(--lightest) ;
+    border-radius: 10px;
+}
+form span{
+    background-color: var(--darker) !important;
+    color: var(--lightest) !important;
+    border: dashed 1px var(--darker) !important;
+}
+form input, form textarea {
+    background-color: var(--lightest) !important;
+    border: dashed 1px var(--darker) !important;
+    /* width: 80%; */
+}
+
+footer{
+    background-color: var(--darker);
+    height: 100px;
+}
+
+footer p {
+    color: var(--lightest);
+    padding-top: 2rem;
+}
+
