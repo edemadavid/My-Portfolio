@@ -102,82 +102,73 @@ body{
     top: 0;
     z-index: 100;
     transition: left 300ms;
-    
-    
 }
 
 
 .fas, .far, .fab{
     color: var(--lightest);
 }
+.page1 {
+    /* height: 100vh;    */
+    display: block !important;
+}
 
 #profile {
     display: flex;
     justify-content: space-between;
-    height: 100%;
-}
-
-
-.background1 {
-    background-color: var(--darkest);
-    width: 100vw;
-    height: 70vh;
-    ;
+    height: 70%;
 }
 
 .background .name h1 {
     color: var(--lightest);
-    /* padding-left: 5rem; */
-    padding-top: 10rem;
-    font-size: 3.5rem;
+    /* padding-top: 10rem; */
+    font-size: 3rem;
     font-family: 'Mochiy Pop P One', sans-serif;
 }
 
 .background .name p {
     color: var(--lightest);
     margin: 0;
-    font-size: 1.7rem;
+    font-size: 1.3rem;
 }
 
 .name{
+
     height: fit-content;
-    
+    padding: 1rem;
+    background: rgba(199, 44, 65, 0.14);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(199, 44, 65, 0.34);
 }
-.displaypics {
-    margin: auto;
+
+.displaypics, .name, .bio {
+    margin: auto !important;
     height: fit-content;
     width: auto;
-    /* padding: 0rem; */
+   
     
 }
-/* .displaypics img{
-
-    padding-bottom: rem !important;
-    border-bottom-left-radius: 50%;
-    border-bottom-right-radius: 50%;
-} */
 
 .bio {
+    margin-top: 13rem !important;
     color: var(--lightest);
-    margin-top: 10rem;
-    width: 300px;
-    height: fit-content;
     font-size: 1.2rem;
-    /* border-left: var(--light) 2px solid ; */
-    padding-left: 1.7rem;
-    /* padding-bottom: 0rem; */
     font-family: 'Concert One', cursive;
-    text-align: center;
-
+    padding: 1rem;
+    background: rgba(199, 44, 65, 0.14);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(199, 44, 65, 0.34);
 }
 
-.links {
-    text-align: center;
-}
-.background2 {
-    background-color: var(--darker);
-    height: 120vh;
-}
+/* .links {
+   
+} */
 
 .containers{
     margin: auto;
@@ -188,7 +179,7 @@ body{
     color: var(--lightest);
     display: flex;
     justify-content: space-between;
-    padding-top: 1.5rem;
+    /* padding-top: 1.5rem; */
     text-align: center;
 }
 
@@ -197,6 +188,21 @@ body{
     margin: 0rem;
 }
 
+.touch {
+    padding: 1rem;
+    background: rgba(199, 44, 65, 0.14);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(199, 44, 65, 0.34);
+}
+
+.page2 h2 {
+    color: var(--lightest);
+    padding-top: 3rem ;
+    font-size: 4rem;
+}
 .about {
     color: var(--lightest);
     /* display: none; */
@@ -241,16 +247,7 @@ body{
     font-size: 1rem;
 }
 
-.background3 {
-    background-color: var(--mid);
-    height: auto;
-}
 
-.background h2{
-    color: var(--lightest);
-    padding-top: 4rem ;
-    font-size: 4rem;
-}
 
 .MyResume{
     display: flex;

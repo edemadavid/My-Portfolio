@@ -12,4 +12,57 @@
         margin-left: 1.5rem;
        
     }
-  }
+}
+
+
+@media screen and (max-width: 425px) {
+    /* ===== first page ====== */
+    #profile {
+        height: 80%;
+        text-align: center;
+    }
+    .name h1{
+        padding-top: 1rem !important;
+        font-size: 2rem !important;
+    }
+    .background .name p {
+        margin: 0;
+        font-size: 1rem;
+    }
+    .page1 img{
+        width: 80%;
+        height: 65%;
+    }
+    .displaypics, .name, .bio {
+        margin: 0rem !important;
+        height:  fit-content;
+        width: auto;
+       
+        
+    }
+    .bio{
+        margin: 0px;
+        padding-top: 1rem !important;
+    }
+    .containers{
+        margin: auto;
+        width: 90%;
+    }
+    .extras {
+        padding-top: 1rem;
+    }
+
+    /* ===== first page ====== */
+
+    .about-row{
+        width: 100%;
+    }
+
+    .about-content-left{
+        padding-left: 0rem;
+        margin-left: 1.5rem;
+       
+    }
+}
+
+
