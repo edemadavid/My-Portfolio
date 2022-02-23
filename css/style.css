@@ -113,7 +113,7 @@ body{
     display: block !important;
 }
 
-#profile {
+#profiles {
     display: flex;
     justify-content: space-between;
     height: 70%;
@@ -128,7 +128,7 @@ body{
 
 .background .name p {
     color: var(--lightest);
-    margin: 0;
+    /* margin: 0; */
     font-size: 1.3rem;
 }
 
@@ -147,13 +147,15 @@ body{
 .displaypics, .name, .bio {
     margin: auto !important;
     height: fit-content;
-    width: auto;
-   
-    
+    width: auto;  
+}
+
+.page1 img {
+    width: auto !important;
 }
 
 .bio {
-    margin-top: 13rem !important;
+    /* margin-top: 13rem !important; */
     color: var(--lightest);
     font-size: 1.2rem;
     font-family: 'Concert One', cursive;
@@ -198,11 +200,57 @@ body{
     border: 1px solid rgba(199, 44, 65, 0.34);
 }
 
-.page2 h2 {
+/* ========== page 2 styles =================  */
+
+.page2 {
+    color: #fce5e4;
+}
+
+.page2 h2, .page3 h2 {
     color: var(--lightest);
     padding-top: 3rem ;
-    font-size: 4rem;
+    font-size: 2.5rem;
 }
+
+.page2 .card {
+    padding: 1rem;
+    background: rgba(199, 44, 65, 0.14);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(199, 44, 65, 0.34);
+}
+
+/* ========== end of page 2 styles =================  */
+
+
+/* ========== page 3 styles =================  */
+.resumeMenu button {
+    background-color: var(--darker) !important;
+    margin: 1rem 0.3rem 1rem 0.3rem;
+    color: #fce5e4;
+    width: 10rem;
+}
+.resumeMenu button:hover {
+    color: #fce5e4 !important;
+}
+
+.resumeMenu button.active {
+    background-color: var(--lightest)!important;
+}
+.resumeMenu button.active:hover {
+    color: var(--lights)!important;
+}
+
+.professionalSkills{
+    margin: 1rem !important;
+    
+}
+
+/* ========== end of page 3 styles =================  */
+
+
 .about {
     color: var(--lightest);
     /* display: none; */

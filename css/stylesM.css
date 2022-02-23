@@ -1,6 +1,11 @@
 @media screen and (max-width: 992px) {
     .bio{
-        margin-top: 1rem;
+        margin-top: 1rem !important ;
+        margin-bottom: 1rem !important;
+    }
+
+    .name{
+        margin: auto !important ;
     }
 
     .about-row{
@@ -36,9 +41,7 @@
     .displaypics, .name, .bio {
         margin: 0rem !important;
         height:  fit-content;
-        width: auto;
-       
-        
+        width: auto;   
     }
     .bio{
         margin: 0px;
@@ -50,6 +53,9 @@
     }
     .extras {
         padding-top: 1rem;
+    }
+    .touch {
+        padding: .5rem;
     }
 
     /* ===== first page ====== */
