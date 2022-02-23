@@ -55,7 +55,7 @@ body{
     display: block;
     color: var(--lightest);
     font-size: 1.5rem;
-    padding-left: 2rem;
+    padding-left: 1rem;
 }
 
 .home {
@@ -109,7 +109,7 @@ body{
     color: var(--lightest);
 }
 .page1 {
-    /* height: 100vh;    */
+    /* height: 120vh;    */
     display: block !important;
 }
 
@@ -226,6 +226,9 @@ body{
 
 
 /* ========== page 3 styles =================  */
+.page3 {
+    color: var(--lightest);
+}
 .resumeMenu button {
     background-color: var(--darker) !important;
     margin: 1rem 0.3rem 1rem 0.3rem;
@@ -247,6 +250,22 @@ body{
     margin: 1rem !important;
     
 }
+
+/* .experience {
+    margin: 1rem;
+} */
+
+.experience .card, .education .card, .hobbies .card {
+    border: 1px solid var(--darker);
+    max-width: auto;
+    background: rgba(199, 44, 65, 0.14);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(199, 44, 65, 0.34);
+}
+
 
 /* ========== end of page 3 styles =================  */
 
